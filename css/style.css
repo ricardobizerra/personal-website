@@ -1,0 +1,276 @@
+/* global */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Barlow', sans-serif;
+}
+
+body{
+    background-color: #001252;
+}
+
+a{
+    text-decoration: none;
+    color: #fff;
+}
+
+img{
+    display: block;
+    max-width: 100%;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+/* header */
+
+header{
+    background-color: #000920;
+}
+
+header div, main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header div{
+    padding: 1rem;
+}
+
+header div img{
+    height: 3.5rem;
+    border-radius: 50%;
+    margin-right: 0.75rem;
+}
+
+header div h1{
+    font-weight: 600;
+    font-size: 1.75rem;
+    color: #fff;
+}
+
+/* all sections */
+
+section{
+    display: flex;
+    flex-direction: column;
+    color: #fff;
+    padding: 2rem;
+}
+
+section h2{
+    font-size: 2rem;
+}
+
+section hr{
+    margin-bottom: 0.5rem;
+}
+
+section p, section ul{
+    font-size: 1.25rem;
+    font-weight: 400;
+}
+
+/* .select-lang */
+
+.select-lang{
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+}
+
+.select-lang button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0.5rem;
+    padding: 0.5rem;
+    width: 50%;
+    color: #fff;
+    font-size: 1.25rem;
+    border: none;
+    border-radius: 5px;
+}
+
+.select-lang button img{
+    height: 1.25rem;
+    border-radius: 5px;
+    margin-right: 0.4rem;
+}
+
+.background-ativo{
+    background-color: #000ca6;
+}
+
+.background-ativo:hover{
+    cursor: pointer;
+}
+
+.background-inativo{
+    background-color: #001252;
+}
+
+.background-inativo:hover{
+    background-color: #000ca6;
+    cursor: pointer;
+}
+
+/* main */
+
+main{
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+}
+
+main p{
+    font-weight: 300;
+    font-size: 1.25rem;
+    color: #fff;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+main p a:hover{
+    text-decoration: underline;
+}
+
+main p a strong{
+    font-weight: 600;
+}
+
+main ul{
+    display: flex;
+    list-style: none;
+}
+
+main ul li{
+    margin: 0 0.5rem;
+    border-radius: 5px;
+}
+
+main ul li a{
+    color: #fff;
+}
+
+main ul li a div{
+    padding: 0.5rem;
+    font-size: 1.125rem;
+}
+
+main ul li a div i{
+    margin-right: 0.25rem;
+}
+
+.contato{
+    background-color: #db1e2f;
+}
+
+.contato:hover{
+    background-color: #a40a21;
+}
+
+.github{
+    background-color: #333333;
+}
+
+.github:hover{
+    background-color: #222222;
+}
+
+.linkedin{
+    background-color: #0e76a8;
+}
+
+.linkedin:hover{
+    background-color: #0a597e;
+}
+
+/* .topics */
+
+.topics ul{
+    padding-left: 1.25rem;
+}
+
+.topics ul li{
+    display: list-item;
+}
+
+/* .disciplinas */
+
+.disciplinas ul li{
+    list-style: none;
+    margin-bottom: 0.5rem;
+}
+
+.disciplinas ul li h3{
+    font-weight: 600;
+    margin: 0.5rem 0;
+}
+
+.disciplinas ul li div{
+    margin: 0.75rem 0;
+    background-color: #0927eb;
+    border-radius: 5px;
+    width: fit-content;
+}
+
+.disciplinas ul li div:hover{
+    background-color: #000ca6;
+}
+
+.disciplinas ul li div a p{
+    font-weight: 400;
+    padding: 0.5rem;
+}
+
+.disciplinas ul li hr{
+    margin-top: 0.75rem;
+    border-color: #8d8d8d;
+}
+
+/* media queries */
+
+@media (max-width: 600px){
+    section h2{
+        font-size: 1.75rem;
+    }
+
+    .disciplinas ul li div{
+        width: 100%;
+    }
+
+    .disciplinas ul li div a{
+        width: 100%;
+    }
+
+    .disciplinas ul li div a{
+        text-align: center;
+    }
+}
+
+@media (max-width: 500px){
+    main ul{
+        flex-direction: column;
+        width: 100%;
+    }
+
+    main ul li{
+        margin: 0 0 0.5rem;
+    }
+
+    main ul li a{
+        width: 100%;
+    }
+
+    main ul li a div{
+        text-align: center;
+    }
+}
